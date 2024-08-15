@@ -18,7 +18,7 @@ public class EmployeeController {
 
     @GetMapping(path = "/employee/{id}")
     public ResponseEntity<Employee> getEmployeeById(@PathVariable("id") final String id) {
-        return new ResponseEntity(Employee.builder().id(id).firstName("Ranjit").lastName("Fernandes).build(), HttpStatus.OK);
+        return new ResponseEntity(Employee.builder().id(id).firstName("Ranjit").lastName("Fernandes.").build(), HttpStatus.OK);
     }
 
     @PostMapping(path = "/employee")
